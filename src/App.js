@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import Alert from './components/alert';
 import Textform from './components/Textform';
 
+
 function Myapp() {
   const [mode, setmode] = useState('light');
   const [alert, setAlert] = useState(null);
@@ -48,7 +49,6 @@ function Myapp() {
       <Navbar title="Textutils" mode={mode} togglemode={togglemode} Greentogglemode={Greentogglemode} />
       <Alert Alert={alert} />
       <Textform mode={mode} showAlert={showAlert} />
-
     </>
 
   );
